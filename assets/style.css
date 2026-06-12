@@ -611,3 +611,29 @@ footer.site {
 footer.site a { color: var(--muted); }
 footer.site a:hover { color: var(--blue); }
 footer.site .legal-links a { margin-left: 18px; }
+
+/* ---------- Handy-Feinschliff (kleine Bildschirme) ---------- */
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 18px; }
+
+  /* Buttons sauber untereinander statt überlaufend */
+  .btn { display: block; width: 100%; text-align: center; }
+  .btn-ghost { margin-left: 0; margin-top: 12px; }
+  .hero-copy p .btn-linkedin { margin-left: 0; margin-top: 14px; }
+
+  /* Große Innenabstände auf dem Handy verkleinern */
+  section.block { padding: 48px 0; }
+  .cta { padding: 40px 22px; }
+  .band { padding: 28px 22px; }
+  .case { padding: 24px 20px; }
+  .contact-card { padding: 24px 20px; }
+  .proof-item { padding: 20px; }
+  .card { padding: 22px; }
+
+  /* Zahlen-Leiste: auf sehr schmalen Geräten eine Spalte, mehr Luft */
+  .stats-inner { grid-template-columns: 1fr; gap: 18px; text-align: center; }
+
+  /* Sticky-Kopf: Wortmarke etwas kleiner, damit das Menü-Icon Platz hat */
+  .brand .wordmark { font-size: 1.25rem; }
+}

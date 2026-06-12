@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0e2a47">
 <title>Über Kerstin Madel – Beraterin für Strategie, Innovation &amp; KI | madel consulting</title>
 <meta name="description" content="Kerstin Madel begleitet Unternehmen seit 2008 als Beraterin, Trainerin und Coach – Strategie und Innovation vom Menschen aus gedacht, mit Design Thinking, OKR und KI.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e2a47'/%3E%3Ctext x='16' y='23' font-family='Arial' font-size='19' font-weight='bold' fill='%2300aeef' text-anchor='middle'%3Em%3C/text%3E%3C/svg%3E">
@@ -16,6 +17,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="canonical" href="https://www.madelconsulting.com/made-by/">
 </head>
 <body>
 
@@ -135,21 +137,7 @@
   </div>
 </footer>
 
-<script>
-(function () {
-  var els = document.querySelectorAll('.reveal');
-  if (!('IntersectionObserver' in window)) {
-    els.forEach(function (el) { el.classList.add('visible'); });
-    return;
-  }
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
-    });
-  }, { threshold: 0.15 });
-  els.forEach(function (el) { io.observe(el); });
-})();
-</script>
+<script src="../assets/reveal.js" defer></script>
 
 </body>
 </html>
