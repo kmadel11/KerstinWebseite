@@ -637,3 +637,13 @@ footer.site .legal-links a { margin-left: 18px; }
   /* Sticky-Kopf: Wortmarke etwas kleiner, damit das Menü-Icon Platz hat */
   .brand .wordmark { font-size: 1.25rem; }
 }
+
+
+/* ===== Logoleiste / Brand-Grid (made for leading brands) ===== */
+.brandgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.brandgroup{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 20px 22px}
+.brandgroup h3{margin:0 0 14px;color:var(--navy);font-size:1.02rem;display:flex;align-items:center;gap:10px}
+.brandgroup h3::before{content:"";width:26px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--bg-soft);color:var(--navy);font-size:.82rem;font-weight:600;white-space:nowrap;transition:.15s}
+.chips span:hover{border-color:var(--cyan);color:var(--blue);transform:translateY(-1px)}
